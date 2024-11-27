@@ -105,7 +105,7 @@ nav a:hover {
     height: 100%;
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.4)), /* Dark-to-white gradient */
-        url('background.jpg'); /* Replace with your image path */
+        url('teeth.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensure image covers the section */
     background-position: center; /* Center the image */
     filter: blur(10px); /* Add blur effect */
@@ -123,8 +123,6 @@ nav a:hover {
     position: relative; /* Ensure text is above the background */
     z-index: 1; /* Keeps text visible */
 }
-
-
 
 /* Our Promises Section */
 .our-promises {
