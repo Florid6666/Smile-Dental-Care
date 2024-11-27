@@ -94,7 +94,7 @@ nav a:hover {
     padding: 3rem 1rem;
     color: #fff; /* Ensures text is readable */
     overflow: hidden; /* Prevents content overflow */
-    height: 400px; /* Controls the section height */
+    height: 450px; /* Adjust height to make it more spacious */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,8 +108,8 @@ nav a:hover {
     width: 100%;
     height: 100%;
     background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.4)), /* Gradient overlay */
-        url('teeth.jpg'); /* Replace with your image path */
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2)), /* Gradient overlay */
+        url('background.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image spans the full width */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
@@ -117,19 +117,33 @@ nav a:hover {
     z-index: -1; /* Pushes the background behind the text */
 }
 
-/* Paragraph Text */
-.invite-section p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative; /* Ensures text stays above the background */
-    z-index: 1; /* Keeps text visible */
+/* Content Styling */
+.invite-section .content {
+    z-index: 1;
     text-align: center;
+    max-width: 800px;
+    padding: 1rem;
 }
 
+/* Heading Styling */
+.invite-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffdd57; /* Highlighted golden color */
+}
 
+/* Paragraph Styling */
+.invite-section p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0 auto;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Makes the text pop */
+}
 /* Our Promises Section */
 .our-promises {
     text-align: center;
