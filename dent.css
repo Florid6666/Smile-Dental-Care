@@ -87,17 +87,40 @@ nav a:hover {
 }
 
 /* Welcome Section */
-.welcome-section {
+/* Invite Section with Background Image */
+.invite-section {
+    position: relative;
     text-align: center;
-    margin: 20px auto;
-    max-width: 800px;
-    font-size: 1.1em;
-    color: #555;
-    padding: 10px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3rem 1rem;
+    color: #fff; /* Ensure text is readable on the image */
+    z-index: 1;
+    overflow: hidden; /* Prevents content from spilling outside */
 }
+
+/* Background Image */
+.invite-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Blurs the background image */
+    opacity: 0.6; /* Makes the background a little transparent */
+    z-index: -1; /* Places the background behind the content */
+}
+
+/* Paragraph Text Styling */
+.invite-section p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
 /* Our Promises Section */
 .our-promises {
