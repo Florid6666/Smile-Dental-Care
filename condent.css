@@ -8,12 +8,37 @@ body {
 }
 
 /* Header Section */
+/* Header Section */
 header {
-    background: linear-gradient(90deg, #4CAF50, #66BB6A);
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
+    text-align: center; /* Center aligns all header content */
+    background-color:#4CAF50;
+    color: #fff;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
+
+/* Logo Container */
+.logo-container {
+    display: inline-block; /* Ensures the logo and text stay together */
+    text-align: center; /* Center aligns the content inside the logo container */
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image fits properly */
+    margin-bottom: 1rem; /* Space between logo and text */
+    border: 3px solid #fff; /* Optional border for the logo */
+}
+
+.logo-container h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
 
 header h1 {
     margin: 0;
