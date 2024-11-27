@@ -8,6 +8,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     const email = formData.get("email");
     const phone = formData.get("phone");
     const message = formData.get("message");
+    
     console.log("Contact Form Submission:");
     console.log(`Name: ${name}`);
     console.log(`Email: ${email}`);
