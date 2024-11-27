@@ -88,14 +88,16 @@ nav a:hover {
 
 /* Welcome Section */
 /* Invite Section */
-/* Invite Section */
 .invite-section {
     position: relative;
     text-align: center;
     padding: 3rem 1rem;
-    color: #fff; /* Text color for readability */
+    color: #fff; /* Ensures text is readable */
     overflow: hidden; /* Prevents content overflow */
-    height: 400px; /* Adjust height to control image display area */
+    height: 400px; /* Controls the section height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Background Image */
@@ -108,11 +110,11 @@ nav a:hover {
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.4)), /* Gradient overlay */
         url('teeth.jpg'); /* Replace with your image path */
-    background-size: contain; /* Ensures the entire image is shown */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-size: cover; /* Ensures the image spans the full width */
     background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
     filter: blur(10px); /* Adds a blur effect */
-    z-index: -1; /* Pushes background behind text */
+    z-index: -1; /* Pushes the background behind the text */
 }
 
 /* Paragraph Text */
@@ -122,9 +124,11 @@ nav a:hover {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-    position: relative; /* Ensures text is above the background */
+    position: relative; /* Ensures text stays above the background */
     z-index: 1; /* Keeps text visible */
+    text-align: center;
 }
+
 
 /* Our Promises Section */
 .our-promises {
