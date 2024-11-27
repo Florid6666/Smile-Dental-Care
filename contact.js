@@ -8,7 +8,11 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     const email = formData.get("email");
     const phone = formData.get("phone");
     const message = formData.get("message");
-
+    console.log("Contact Form Submission:");
+    console.log(`Name: ${name}`);
+    console.log(`Email: ${email}`);
+    console.log(`Phone: ${phone}`);
+    console.log(`Message: ${message}`);
     // Simulate sending the message (this is where you could use an API)
     alert(
         `Thank you, ${name}! Your message has been received. We will get back to you at ${email} soon.`
